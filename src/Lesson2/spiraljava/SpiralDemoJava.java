@@ -1,13 +1,13 @@
-package Lesson2.spiral;
+package Lesson2.spiraljava;
 
 public class SpiralDemoJava {
 
     public static void main(String[] args) {
 
         // Всё работает для матрицы любого размера
-        System.out.println("  ////////////////////////////////////");
-        System.out.println(" // Заполнение матрицы по спирали ///");
-        System.out.println("////////////////////////////////////");
+        System.out.println("  /////////////////////////////////////");
+        System.out.println(" /// Заполнение матрицы по спирали ///");
+        System.out.println("/////////////////////////////////////");
         int lines = 5;  //количество строк
         int columns = 7; //количество столбцов
 
