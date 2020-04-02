@@ -1,4 +1,4 @@
-package Lesson2.spiraljava;
+package Lesson2.spiral_Java;
 
 public class SpiralDemoJava {
 

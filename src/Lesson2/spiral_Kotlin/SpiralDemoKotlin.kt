@@ -1,4 +1,4 @@
-package Lesson2.spiralkotlin
+package Lesson2.spiral_Kotlin
 
 fun main() {
 
@@ -18,7 +18,6 @@ println("/////////////////////////////////////")
 fun spiral(arr:Array<IntArray>):Array<IntArray>{
 
     //************* подготовка ****************
-
     var res = arr       //переписываем в изменяемую переменную
     var k = 1           // значение первого элемента
     val y = res.size   //количество строк
@@ -47,7 +46,7 @@ fun spiral(arr:Array<IntArray>):Array<IntArray>{
     while (ii < min) {
         for (i in 0..3) {
             if (i % 2 == 0) {                  //еcли 0 или 2,
-                k = fill(k, res[ii])         // то заполняем строку массива a
+                k = fill(k, res[ii])         // то заполняем строку массива res
                 aa = turnToLeft(res)         //поворот на 90 градусов
             } else {                         //еcли 1 или 3,
                 k = fill(k, aa[ii])        //то заполняем строку массива aa
@@ -61,7 +60,7 @@ fun spiral(arr:Array<IntArray>):Array<IntArray>{
 
 //заполнение строки матрицы
 fun fill(k:Int, ints:IntArray):Int{
-    var k = k                  //k- не изменяемая, перписываем её в var
+    var k = k                  //k- не изменяемая, перписываем её в var с тем же именем
     for (i in ints.indices){
         if (ints[i] == 0){
             ints[i] = k
