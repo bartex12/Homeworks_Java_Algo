@@ -37,13 +37,11 @@ public class SpiralDemoJava {
         if (y > 0){
             x = a[0].length;
             if (x < 1){
-                System.out.println("Минимальный размер матрицы должен быть 1х1\n" +
-                        "Желательно - не меньше, чем 2х2" );
+                showMessage();
                 return a;
             }
         }else {
-            System.out.println("Минимальный размер матрицы должен быть 1х1\n" +
-                    "Желательно - не меньше, чем 2х2"  );
+            showMessage();
             return a;
         }
         int[][] aa = new int [x][y]; //матрица с размерами для обработки поворота
@@ -53,16 +51,16 @@ public class SpiralDemoJava {
         }else if (min > 2){
             min = min-2;
         }
-        
+
         //************* вычисления ****************
         int ii = 0;
         while (ii < min){
             for (int i = 0; i < 4; i++){
                 if (i%2 == 0){                  //еcли 0 или 2,
-                    k = fill(k, a[ii]);         // то заполняем a
+                    k = fill(k, a[ii]);         // то заполняем строку массива a
                     aa = turnToLeft(a);         //поворот на 90 градусов
                 }else {                         //еcли 1 или 3,
-                    k = fill(k, aa[ii]);        //то заполняем aa
+                    k = fill(k, aa[ii]);        //то заполняем строку массива aa
                     a = turnToLeft(aa);         //поворот на 90 градусов
                 }
             }
@@ -101,5 +99,10 @@ public class SpiralDemoJava {
             }
             System.out.println();
         }
+    }
+
+    private static void showMessage() {
+        System.out.println("Минимальный размер матрицы должен быть 1х1\n" +
+                "Желательно - не меньше, чем 2х2" );
     }
 }
