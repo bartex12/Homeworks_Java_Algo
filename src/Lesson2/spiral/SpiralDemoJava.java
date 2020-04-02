@@ -1,32 +1,19 @@
 package Lesson2.spiral;
 
 public class SpiralDemoJava {
+
     public static void main(String[] args) {
 
-        System.out.println("*** Вариант1 ***");
+        // Всё работает для матрицы любого размера
+        System.out.println("  ////////////////////////////////////");
+        System.out.println(" // Заполнение матрицы по спирали ///");
+        System.out.println("////////////////////////////////////");
         int lines = 5;  //количество строк
         int columns = 7; //количество столбцов
-        int[][] a = new int[lines][columns];
-        a = spiral(a);
-        showMatrix(a);
 
-        System.out.println();
-        System.out.println("*** Вариант2 ***");
-        //Для большой матрицы
-        lines =30;
-        columns =20;
-        int[][] a1 = new int[lines][columns];
-        a1 = spiral(a1);
-        showMatrix(a1);
-
-        System.out.println();
-        System.out.println("*** Вариант3 ***");
-        //для выявления ошибки
-        lines = 0;
-        columns =2;
-        int[][] a2 = new int[lines][columns];
-        a2 = spiral(a2);
-        showMatrix(a2);
+        int[][] matrix = new int[lines][columns];
+        matrix = spiral(matrix);
+        showMatrix(matrix);
     }
 
     private static int [][] spiral(int [][] a){
