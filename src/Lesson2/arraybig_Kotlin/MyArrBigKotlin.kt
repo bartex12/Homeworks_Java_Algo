@@ -163,19 +163,26 @@ class MyArrBigKotlin(var sizeArr:Int) {
         var high: Int
         var mark: Int
         high = 0
-        while (high < sizeArr) {
-            mark = high
+        while (high < sizeArr) {                // Внешний цикл
+            mark = high                         // Минимум
             low = high + 1
-            while (low < sizeArr) {
-                if (arr[low] < arr[mark]) {
-                    mark = low
+            while (low < sizeArr) {             // Внутренний цикл
+                if (arr[low] < arr[mark]) {     // Если значение mark больше,
+                    mark = low                  // значит, найден новый минимум
                 }
                 low++
             }
-            exchange(high, mark)
+            exchange(high, mark)                // Поменять их местами
             high++
         }
     }
+
+
+
+
+
+
+
 
     //обмен элементами
     private fun exchange(a: Int, b: Int) {
@@ -189,11 +196,11 @@ class MyArrBigKotlin(var sizeArr:Int) {
         var low: Int
         var high: Int
         high = sizeArr - 1
-        while (high >= 1) {
+        while (high >= 1) {                         // Внешний цикл (обратный)
             low = 0
-            while (low < high) {
-                if (arr[low] > arr[low + 1]) {
-                    exchange(low, low + 1)
+            while (low < high) {                    // Внутренний цикл (прямой)
+                if (arr[low] > arr[low + 1]) {       // Порядок нарушен?
+                    exchange(low, (low + 1))         // Поменять местами
                 }
                 low++
             }
@@ -201,4 +208,3 @@ class MyArrBigKotlin(var sizeArr:Int) {
         }
     }
 }
-

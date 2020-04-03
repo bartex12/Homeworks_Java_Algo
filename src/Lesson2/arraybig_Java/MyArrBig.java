@@ -132,10 +132,10 @@ import java.util.Random;
     void sortBubble(){
         int in;
         int out;
-        for (out = size-1; out>=1; out--){
-            for (in = 0; in<out; in++){
-                if (arr[in]>arr[in+1]){
-                    exchange(in, (in+1));
+        for (out = size-1; out>=1; out--){  // Внешний цикл (обратный)
+            for (in = 0; in<out; in++){     // Внутренний цикл (прямой)
+                if (arr[in]>arr[in+1]){     // Порядок нарушен?
+                    exchange(in, (in+1));   // Поменять местами
                 }
             }
         }
@@ -153,18 +153,18 @@ import java.util.Random;
          int in;
          int out;
          int mark;
-         for (out = 0; out<size; out++){
-             mark = out;
-             for (in = out+1; in<size; in++){
-                 if (arr[in]<arr[mark]){
-                     mark = in;
+         for (out = 0; out<size; out++){            // Внешний цикл
+             mark = out;                            // Минимум
+             for (in = out+1; in<size; in++){       // Внутренний цикл
+                 if (arr[in]<arr[mark]){            // Если значение mark больше,
+                     mark = in;                     // значит, найден новый минимум
                  }
              }
-             exchange(out, mark);
+             exchange(out, mark);                   // Поменять их местами
          }
      }
 
-     //быстрая сортировка
+         //быстрая сортировка
      void quickSort(int[] array, int low, int high) {
          if (array.length == 0)
              return;//завершить выполнение если длина массива равна 0
