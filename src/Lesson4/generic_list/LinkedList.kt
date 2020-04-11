@@ -1,8 +1,8 @@
-package Lesson4
+package Lesson4.generic_list
 
 class LinkedList<T>() {
 
-    var first:Link<T>?
+    var first: Link<T>?
 
    init {
        first = null
@@ -24,22 +24,22 @@ class LinkedList<T>() {
     //метод должен вернуть удалённый объект, удаляем с начала списка
     // поэтому мы первый (последний вставленный) объект списка  сначала запоминаем в temp
     //а затем переписываем ссылку first удалённого объекта на first следующего
-    fun delete():Link<T>?{
-        val tmp:Link<T>? = first
+    fun delete(): Link<T>?{
+        val tmp: Link<T>? = first
         first = first?.next
         return tmp
     }
 
     fun display(){
-        var current:Link<T>? = first
+        var current: Link<T>? = first
         while (current!=null){
             System.out.println(current.link)
             current = current.next
         }
     }
 
-    fun find(searchNode:T):Link<T>?{
-    var findNode = Link(searchNode)
+    fun find(searchNode:T): Link<T>?{
+    val findNode = Link(searchNode)
         var current = first
         while (current!=null){
             if (current.link!!.equals(findNode.link)){

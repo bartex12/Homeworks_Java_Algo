@@ -1,8 +1,10 @@
-package Lesson4
+package Lesson4.generic_list
+
+import Lesson4.generic_list.LinkedList
 
 fun main(){
 
-    val list:LinkedList<String> = LinkedList()
+    val list: LinkedList<String> = LinkedList()
     list.insert("Барсик1")
     list.insert("Барсик2")
     list.insert("Барсик3")
@@ -14,7 +16,7 @@ fun main(){
     //***********
 
     println()
-    val list2:LinkedList<Int> = LinkedList()
+    val list2: LinkedList<Int> = LinkedList()
     list2.insert(1)
     list2.insert(2)
     list2.insert(3)

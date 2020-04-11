@@ -1,9 +1,9 @@
-package Lesson4
+package Lesson4.my_linked_list
 
-    fun main(){
+fun main(){
         //пишем 5 человек
         println()
-        val mll2:MyLinkedList<People> = MyLinkedList()
+        val mll2: MyLinkedList<People> = MyLinkedList()
         mll2.insertFirst(People("Bob1", 21))
         mll2.insertFirst(People("Bob2", 22))
         mll2.insertFirst(People("Bob3", 23))

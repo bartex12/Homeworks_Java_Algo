@@ -1,4 +1,4 @@
-package Lesson4
+package Lesson4.my_linked_list
 
 import java.util.*
 
@@ -31,6 +31,6 @@ class People(val name: String, val age: Int) {
     }
 
     override fun toString(): String {
-        return "Name: " + this.name + ", age: " + this.age
+        return "Name: " + this.name + ", line: " + this.age
     }
 }
