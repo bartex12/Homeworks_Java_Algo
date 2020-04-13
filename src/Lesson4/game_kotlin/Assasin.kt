@@ -19,12 +19,11 @@ class Assasin(heal: Int, name: String, damage: Int, addHeal: Int) : Hero(heal, n
             } else {
                 hero.causeDamage(damage + cricitalHit)
             }
-            println(this.name + " нанес урон " + hero.name +
-                    " оставив здоровья " + hero.health)
+            println("${this.name} нанес урон ${hero.name}, оставив здоровья ${hero.health}")
         }
     }
 
-    override fun healing(hero: Hero) {
-        println("Убийцы не умеют лечить!")
+        override fun healing(hero: Hero) {
+            println("Убийцы не умеют лечить!")
+        }
     }
-}

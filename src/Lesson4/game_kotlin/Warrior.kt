@@ -11,8 +11,7 @@ class Warrior(health: Int, type: String, damage: Int, addHeal: Int) : Hero(healt
                 println("Герой погиб и его нельзя бить!")
             } else {
                 hero.causeDamage(damage)
-                println(this.name + " нанес урон " + hero.name +
-                        " оставив  здоровья " + hero.health)
+                println("${this.name} нанес урон ${hero.name}, оставив здоровья ${hero.health}")
             }
 
         }
