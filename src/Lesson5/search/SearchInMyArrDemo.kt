@@ -6,7 +6,7 @@ package Lesson5.search
     fun main(){
         val arr:IntArray = intArrayOf(7,1,10,6,4,5,3,0,8,9,12,11,2)
 
-        val myArr:MyArr = MyArr(arr.size)
+        val myArr = MyArr(arr.size)
         for (item in arr.indices){
             myArr.insert(arr[item])
         }
