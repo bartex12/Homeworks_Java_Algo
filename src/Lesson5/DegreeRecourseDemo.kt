@@ -2,15 +2,15 @@ package Lesson5
 
 fun main(){
     println("2 в степени 8")
-    println(degreeRecourse(2, 8));
+    println(degreeRecourse(2, 8))
     println("3 в степени 3")
-    println(degreeRecourse(3, 3));
+    println(degreeRecourse(3, 3))
     println("12 в степени 0")
-    println(degreeRecourse(12, 0));
+    println(degreeRecourse(12, 0))
     println("0 в степени 15")
-    println(degreeRecourse(0, 15));
+    println(degreeRecourse(0, 15))
     println("5 в степени -2")
-    println(degreeRecourse(5, -2));
+    println(degreeRecourse(5, -2))
 }
 
 //возведение в целую неотрицательную степень неотрицательных чисел
