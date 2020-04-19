@@ -4,6 +4,7 @@ import java.util.ArrayList
 
 /*
 * расчёт задачи о рюкзаке через рекурсию
+*
 * */
 object BackPackDemo {
 
