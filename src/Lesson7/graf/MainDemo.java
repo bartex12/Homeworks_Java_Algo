@@ -1,8 +1,5 @@
 package Lesson7.graf;
 
-import Lesson7.graf.BreadthFirstPath;
-import Lesson7.graf.GrafVebinar;
-
 public class MainDemo {
 
     public static void main(String[] args) {
