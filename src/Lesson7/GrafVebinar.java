@@ -1,4 +1,4 @@
-package Lesson7.graf;
+package Lesson7;
 
 import java.util.LinkedList;
 

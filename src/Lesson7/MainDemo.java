@@ -1,4 +1,5 @@
-package Lesson7.graf;
+package Lesson7;
+
 
 public class MainDemo {
 
